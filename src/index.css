@@ -32,20 +32,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 18px 50px;
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 73, 73) 0%,
-    rgb(250, 191, 81) 25%,
-    yellow 50%,
-    rgb(86, 252, 86) 75%,
-    rgb(95, 95, 253) 100%
-  );
+  background-color:rgb(114, 114, 114) ;
 
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .navbar.dark {
@@ -84,7 +82,7 @@ body {
 .nav-links a,
 .nav-links span {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -202,6 +200,8 @@ body {
   align-items: center;
   margin-top: 80px;
   color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .hero-container {
@@ -406,6 +406,8 @@ body {
   text-align: center;
 }
 
+/* Header */
+
 .services-header h5 {
   color: #52ab98;
   letter-spacing: 2px;
@@ -425,25 +427,22 @@ body {
   margin-bottom: 60px;
 }
 
-/* Grid Layout */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
+/* Card */
 
-/* Card Design */
 .service-card {
-  background: #f8f9fc;
-  padding: 35px 25px;
+  background: #dadada;
+  padding: 40px 25px;
   border-radius: 40px;
   transition: 0.4s ease;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  height: 280px;
+  border-width: 1px;
+  border-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Hover Effect */
 .service-card:hover {
   transform: translateY(-10px);
   background: linear-gradient(135deg, #52ab98, #08164a);
@@ -457,6 +456,7 @@ body {
 }
 
 /* Icon */
+
 .service-icon {
   font-size: 40px;
   color: #ff7e7e;
@@ -465,40 +465,48 @@ body {
 }
 
 .service-card:hover .service-icon {
-  color: #ffffff;
+  color: white;
   transform: scale(1.2);
 }
+
+/* Text */
 
 .service-card h3 {
   margin-bottom: 15px;
   font-size: 20px;
-  transition: 0.3s ease;
 }
 
 .service-card p {
   color: #555;
   font-size: 15px;
   line-height: 1.6;
-  transition: 0.3s ease;
+}
+
+/* Swiper Center Big Effect */
+
+.services-swiper .swiper-slide {
+  transform: scale(0.85);
+  transition: transform 0.5s ease;
+}
+
+.services-swiper .swiper-slide-active {
+  transform: scale(2);
+}
+
+/* Navigation */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
   .services-header h2 {
     font-size: 28px;
   }
 }
-/* Swiper Navigation Buttons */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #000000;
-}
-
-/* Smooth continuous effect */
-.services-swiper .swiper-wrapper {
-  transition-timing-function: linear !important;
-}
-
 /* ========== WHY YOU NEED US SECTION ========== */
 
 .uses-section {
