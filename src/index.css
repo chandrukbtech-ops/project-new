@@ -377,8 +377,9 @@ html {
 .about-subtitle {
   color: #f44b4b;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .about-left h2 {
@@ -508,14 +509,39 @@ html {
   height: 180px;
   background: white;
   border-radius: 25px;
+
+  /* 🔥 NEW */
+  border: 1px solid #e0e0e0; /* light border */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* smooth shadow */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   transition: all 0.6s ease;
   cursor: pointer;
 }
+.position-0 {
+  transform: scale(1.2);
+  z-index: 5;
+  opacity: 1;
 
+  /* 🔥 EXTRA */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+.card {
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #ff6b6b, #feca57) border-box;
+}
+.carousel {
+  cursor: grab;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
 /* ICON */
 .icon {
   font-size: 30px;
