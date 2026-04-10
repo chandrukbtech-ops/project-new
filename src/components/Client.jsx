@@ -1,7 +1,7 @@
 import React from "react";
 
-import company1 from "/Users/chandruk/Desktop/Abhijit Hr Compliance 2/Abhijit/src/assets/company1.png";
-import company2 from "/Users/chandruk/Desktop/Abhijit Hr Compliance 2/Abhijit/src/assets/company2.png";
+import company1 from "../assets/company1.png";
+import company2 from "../assets/company2.png";
 
 const brandList = [
   { id: 1, logo: company1, name: "Company One" },
