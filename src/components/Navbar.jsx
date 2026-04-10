@@ -1,23 +1,16 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
-  const navigate = useNavigate();
 
   const scrollToSection = (id) => {
-    navigate("/"); // always go to home first
-
-    setTimeout(() => {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-
-    setMobileMenu(false);
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setMobileMenu(false);
+    }
   };
 
   return (
@@ -39,7 +32,7 @@ function Navbar() {
 
       {/* Links */}
       <ul className={`nav-links ${mobileMenu ? "active" : ""}`}>
-
+        
         <li onClick={() => scrollToSection("home")}>Home</li>
         <li onClick={() => scrollToSection("about")}>About</li>
 
@@ -49,9 +42,7 @@ function Navbar() {
           onMouseEnter={() => setDropdown(true)}
           onMouseLeave={() => setDropdown(false)}
         >
-          <span onClick={() => scrollToSection("services")}>
-            Services ▾
-          </span>
+          <span>Services ▾</span>
 
           <ul className={`dropdown-menu ${dropdown ? "show" : ""}`}>
             <li onClick={() => scrollToSection("services")}>

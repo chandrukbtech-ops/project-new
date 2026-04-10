@@ -535,13 +535,7 @@ html {
   background: linear-gradient(white, white) padding-box,
               linear-gradient(135deg, #ff6b6b, #feca57) border-box;
 }
-.carousel {
-  cursor: grab;
-}
 
-.carousel:active {
-  cursor: grabbing;
-}
 /* ICON */
 .icon {
   font-size: 30px;
