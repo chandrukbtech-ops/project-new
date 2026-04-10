@@ -68,7 +68,7 @@ html {
 }
 
 .logo {
-  width: 38px;
+  width: 50px;
   transition: transform 0.3s ease;
 }
 
@@ -280,7 +280,7 @@ html {
 }
 
 .hero-left img {
-  width: 420px;
+  width: 580px;
   max-width: 100%;
 }
 
@@ -311,7 +311,7 @@ html {
   padding: 14px 35px;
   border-radius: 30px;
   border: none;
-  background: #8f8f8f;
+  background: #848484;
   color: white;
   font-size: 16px;
   cursor: pointer;

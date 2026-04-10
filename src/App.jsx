@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import UsesofUs from "./components/UsesofUs";
 import Footer from "./components/Footer";
 import ReachUs from "./components/ReachUs";
+import Client from "./components/Client";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <Hero />
       <AboutUs />
       <Services />
+      <Client />
       <UsesofUs />
       <ReachUs />
     </>
