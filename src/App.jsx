@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import ServiceDetail from "./components/ServiceDetail";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,26 +13,41 @@ import UsesofUs from "./components/UsesofUs";
 import Footer from "./components/Footer";
 import ReachUs from "./components/ReachUs";
 
-function App() {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false, 
-      offset: 100,
-    });
-  }, []);
-
+function Home() {
   return (
-    <div className="app-wrapper">
-      <Navbar />
+    <>
       <Hero />
       <AboutUs />
       <Services />
       <UsesofUs />
       <ReachUs />
+    </>
+  );
+}
+
+function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 100,
+    });
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ReachUs />} />
+
+        {/* ✅ ONLY THIS for all services */}
+        <Route path="/services/:serviceId" element={<ServiceDetail />} />
+      </Routes>
+
       <Footer />
-    </div>
+    </>
   );
 }
 

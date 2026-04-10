@@ -50,18 +50,17 @@ function Footer() {
           <h4>Reach Us</h4>
           <p>
             <FaMapMarkerAlt className="footer-icon" />
-            No. 123, Business Tower, Anna Salai, Chennai, Tamil Nadu 600002
+            <a href="https://www.google.com/maps/place/MRP+Green+Homes/@12.9501488,80.033323,1107m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a52f58c7200a6f3:0xfbc353fbecd52210!8m2!3d12.9501488!4d80.0358979!16s%2Fg%2F11g4fllp79?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              MRP Green Homes Somangalam Kundrathur,Kancheepuram-600069
+            </a>
           </p>
 
           <p>
             <FaPhoneAlt className="footer-icon" />
-            044 – 4000 1234
+            +91  7550025543
           </p>
 
-          <p>
-            <FaPhoneAlt className="footer-icon" />
-            +91 90000 00000
-          </p>
+        
 
           <p>
             <FaEnvelope className="footer-icon" />

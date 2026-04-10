@@ -2,7 +2,7 @@ import React from "react";
  
 const ReachUs = () => {
   return (
-    <section className="reach-section" id="reach">
+    <section className="reach-section" id="contact">
       <div className="reach-card">
         <div className="reach-left">
           <h2>Let’s Connect</h2>

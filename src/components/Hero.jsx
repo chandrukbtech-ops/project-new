@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-container" data-aos="slide-up">
 
         <div className="hero-left">

@@ -46,7 +46,7 @@ function UsesofUs() {
   ];
 
   return (
-    <section className="uses-section">
+    <section className="uses-section" id="uses">
       <div className="uses-container" data-aos="slide-up">
 
         <div className="uses-header">
